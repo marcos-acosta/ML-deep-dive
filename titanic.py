@@ -8,8 +8,8 @@ import pandas as pd
 import math
 import re
 
-train = pd.read_csv('data/train.csv')
-test = pd.read_csv('data/test.csv')
+train = pd.read_csv('data/titanic/train.csv')
+test = pd.read_csv('data/titanic/test.csv')
 
 ''' PREPROCESSING '''
 
@@ -98,4 +98,4 @@ results = pd.DataFrame()
 results['PassengerId'] = test['PassengerId']
 results['Survived'] = predictions
 
-results.to_csv('out/titanic_results_nn_2.csv', index=False)
+results.to_csv('out/titanic/titanic_results_nn_2.csv', index=False)
