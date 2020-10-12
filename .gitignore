@@ -1,3 +1,5 @@
 venv/
 data/
 out/
+embeddings/
+word2vec/
